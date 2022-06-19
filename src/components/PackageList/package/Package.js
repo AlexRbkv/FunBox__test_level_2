@@ -12,7 +12,7 @@ const Package = ({ data }) => {
     }
   };
   return (
-    <section
+    <article
       className={
         disable
           ? 'Package-container Package-container--disabled'
@@ -73,7 +73,7 @@ const Package = ({ data }) => {
           </>
         )}
       </p>
-    </section>
+    </article>
   );
 };
 
