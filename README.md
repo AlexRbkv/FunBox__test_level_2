@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FunBox\_\_test_level_2
 
 # Getting Started with Create React App
@@ -70,3 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# funbox__test_level_2
+Тестовое задания для FunBox
+>>>>>>> 63c9b8b40e0560a13a432689edec9ad3d47de479
