@@ -1,0 +1,100 @@
+@import './normalize';
+
+@font-face {
+	font-family: 'Exo2.0';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Exo2.0'),
+				url('../src/assets/fonts/Exo2.0/Exo2.0-Thin.ttf') format('ttf'),
+				url('../src/assets/fonts/Exo2.0/Exo2.0-Thin.otf') format('otf'),
+				url('../src/assets/fonts/Exo2.0/Exo2.0-Thin.woff') format('woff'),
+				url('../src/assets/fonts/Exo2.0/Exo2.0-Thin.svg') format('svg'),
+
+}
+
+@font-face {
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Trebuchet MS'),
+				url('../src/assets/fonts/TrebuchetMS/trebuchetms.ttf') format('ttf'),
+				url('../src/assets/fonts/TrebuchetMS/trebuchetms.otf') format('otf'),
+				url('../src/assets/fonts/TrebuchetMS/trebuchetms.woff') format('woff'),
+				url('../src/assets/fonts/TrebuchetMS/trebuchetms.svg') format('svg'),
+}
+
+$white: #FFFFFF;
+$black: #000000;
+$gray: #F2F2F2;
+$gray-disable: #B3B3B3;
+$dark-gray: #666666;
+$blue: #1698D9;
+$blue-hover: #2EA8E6;
+$red: #D91667;
+$red-hover: #E52E7A;
+$red-light: #E62E7A;
+$yellow: #FFFF66;
+
+.red-text {
+	color: $red-light;
+}
+
+.blue-text {
+	color: $blue-hover;
+}
+
+
+
+html, body {
+	all: unset;
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', 'Arial', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-size: 16px;
+	@media screen and (max-width:400px) {
+		font-size: 12px;
+	}
+	overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%; 
+}
+
+* {
+	-webkit-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+

@@ -1,0 +1,222 @@
+@import '../../../index.scss';
+
+.Package-container {
+	width: 20rem;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.Package-container--base {
+	&:hover {
+		.Package-card__outer {
+			background: -o-linear-gradient(315deg, transparent 31px, $blue-hover 0);
+			background: linear-gradient(135deg, transparent 31px, $blue-hover 0);
+		}
+		.Package-card__weight {
+			background-color: $blue-hover;
+		}
+		.Package__note {
+			button {
+				color: $blue-hover;
+				border-bottom: 1px dashed $blue-hover;
+			}
+		}
+	}
+}
+
+.Package-container--selected {
+	&:hover {
+		.Package-card__outer {
+			background: -o-linear-gradient(315deg, transparent 31px, $red-hover 0);
+			background: linear-gradient(135deg, transparent 31px, $red-hover 0);
+		}
+		.Package-card__weight {
+			background-color: $red-hover;
+		}
+		.Package__note {
+			button {
+				color: $red-hover;
+				border-bottom: 1px dashed $red-hover;
+			}
+		}
+	}
+	.Package-card__outer {
+		background: -o-linear-gradient(315deg, transparent 31px, $red 0);
+		background: linear-gradient(135deg, transparent 31px, $red 0);
+	}
+	.Package-card__weight {
+		background-color: $red;
+	}
+	.Package__note {
+		border-bottom: 1px solid rgba(0,0,0,0);
+		transition: 0s ease;
+		button {
+			color: $red;
+			border-bottom: 1px dashed $red;
+		}
+	}
+}
+
+.Package-container--disabled {
+	&:hover {
+		cursor: default;
+	}
+	.Package-card__outer {
+		cursor: default;
+	}
+	.Package-card__outer {
+		background: -o-linear-gradient(315deg, transparent 31px, $gray-disable 0);
+		background: linear-gradient(135deg, transparent 31px, $gray-disable 0);
+	}
+	.Package-card__note {
+		color: $gray-disable;
+	}
+	.Package-card__title {
+		color: $gray-disable;
+	}
+	.Package-card__bonus {
+		color: $gray-disable;
+	}
+	.Package-card__image {
+		opacity: 0.5;
+	}
+	.Package-card__weight {
+		background-color: $gray-disable;
+	}
+	.Package__note {
+		color: $yellow;
+	}
+}
+
+.Package-card {
+	outline: none;
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+	outline: none;
+}
+
+.Package-card__outer {
+	width: 20rem;
+	height: 30rem;
+	background: -o-linear-gradient(315deg, transparent 31px, $blue 0);
+	background: linear-gradient(135deg, transparent 31px, $blue 0);
+	position: relative; 
+	border-radius: 0.75rem;
+	cursor: pointer;
+}
+
+.Package-card__inner {
+	width: calc(100% - 0.5rem);
+	height: calc(100% - 0.5rem);
+	position: absolute;
+	background: -o-linear-gradient(315deg, transparent 31px, $gray 0);
+	background: linear-gradient(135deg, transparent 31px, $gray 0);
+	top: 0.25rem;
+	left: 0.25rem;
+	border-radius: 0.625rem;
+	overflow: hidden;
+}
+
+.Package-card__description-wrap {
+	padding: 1.0625rem 2.75rem;
+	text-align: left;
+	z-index: 2;
+	position: absolute;
+	@media screen and  (max-width: 400px) {
+		padding: 2rem 3rem;
+	}
+}
+
+.Package-card__note {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.1875rem;
+	color: $dark-gray;
+	margin-bottom: 0.3125rem;
+}
+
+.Package-card__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	color: $black;
+	letter-spacing: 2px;
+	margin-bottom: 0.9375rem;
+	span {
+		display: block;
+		font-size: 1.5rem;
+		line-height: 1.74rem;
+	}
+}
+
+.Package-card__bonus {
+	font-style: normal;
+	font-size: 0.875rem;
+	line-height: 1rem;
+	list-style: none;
+	color: $dark-gray;
+}
+
+.Package-card__image {
+	position: absolute;
+	z-index: 1;
+	top: 12.5rem;
+  left: -1.5rem;
+}
+
+.Package-card__weight {
+	background-color: $blue;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	position: absolute;
+  	bottom: calc(1rem - 0.25rem);
+  	right: calc(1rem - 0.25rem);
+	font-family: Trebuchet MS;
+	font-size: 2.635rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: 0;
+	text-align: center;
+	color: $white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 0.5rem;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	padding-bottom: 0.5rem;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	z-index: 2;
+	span {
+		font-size: 1.3125rem;
+	}
+}
+
+.Package__note {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: $white;
+	margin-top: 0.875rem;
+	button {
+		font: inherit;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 15px;
+		color: $blue;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		border-bottom: 1px dashed $blue;
+	}
+}

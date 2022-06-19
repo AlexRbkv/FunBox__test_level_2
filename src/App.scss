@@ -1,0 +1,53 @@
+@import './index.scss';
+
+.App {
+  text-align: center;
+  background-image: url('../src/assets/images/background.png');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  @media screen and  (orientation: portrait) {
+    height: 100%;
+  }
+  @media screen and  (max-width: 1183px) {
+    height: 100%;
+  }
+  @media screen and  (max-width: 768px) {
+    background-size: auto;
+  }
+  @media screen and (max-height: 675px) {
+    height: 100%;
+  }
+}
+
+.App__caption {
+  font-family: 'Exo2.0', "Arial", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;;
+  line-height: 2.75rem;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $white;
+  margin-bottom: 1.5625rem;
+}
+
+.App__container {
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 75rem;
+  padding: 3rem 2rem;
+  @media screen and  (max-width: 768px) {
+    padding: 3rem 2rem 6rem;
+  }
+}
