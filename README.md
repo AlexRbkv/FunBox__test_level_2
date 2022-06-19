@@ -7,6 +7,8 @@
 Ответы на теоретические вопросы (Level 1) доступны по ссылке:
 https://docs.google.com/document/d/1qoClTkNjoVuNa5ndsDzISycAagBuBpTw/edit?usp=sharing&ouid=118030194809399636271&rtpof=true&sd=true
 
+Приложение было создано с помощью create-react-app
+
 # Начало работы
 
 1. Склонировать репозиторий
