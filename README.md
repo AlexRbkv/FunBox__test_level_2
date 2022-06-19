@@ -2,7 +2,7 @@
 
 Задание выполнил: Рыбаков Александр
 
-Сроки выполнения: 17.06.2022 - 19.06.2022
+Сроки выполнения: 16.06.2022 - 19.06.2022
 
 Ответы на теоретические вопросы (Level 1) доступны по ссылке:
 https://docs.google.com/document/d/1qoClTkNjoVuNa5ndsDzISycAagBuBpTw/edit?usp=sharing&ouid=118030194809399636271&rtpof=true&sd=true
