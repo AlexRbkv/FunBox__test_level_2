@@ -9,6 +9,9 @@ https://docs.google.com/document/d/1qoClTkNjoVuNa5ndsDzISycAagBuBpTw/edit?usp=sh
 
 Приложение было создано с помощью create-react-app
 
+Ссылка на практическую часть тестового задания (Level 2):
+https://alexrbkv.github.io/funbox__test_level_2/
+
 # Начало работы
 
 1. Склонировать репозиторий
