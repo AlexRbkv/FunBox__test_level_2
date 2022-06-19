@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Package.scss';
 import PackageImage from '../../../assets/images/cat.png';
 
-const Package = ({ data }) => {
+const Package = ({ data, tabindex }) => {
   const { title, taste, bonus, weight, note, disable } = data;
   const [selected, setSelected] = useState(false);
   const [focused, setFocused] = useState(false);
@@ -13,6 +13,7 @@ const Package = ({ data }) => {
   };
   return (
     <article
+      tabindex={!disable && tabindex}
       className={
         disable
           ? 'Package-container Package-container--disabled'
