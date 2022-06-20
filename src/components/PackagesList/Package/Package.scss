@@ -1,59 +1,50 @@
 @import '../../../index.scss';
 
-.Package-container {
-	width: 20rem;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-.Package-container--base {
+@mixin package_theme-color($baseColor, $hoverColor) {
 	&:hover {
 		.Package-card__outer {
-			background: -o-linear-gradient(315deg, transparent 31px, $blue-hover 0);
-			background: linear-gradient(135deg, transparent 31px, $blue-hover 0);
+			background: -o-linear-gradient(315deg, transparent 31px, $hoverColor 0);
+			background: linear-gradient(135deg, transparent 31px, $hoverColor 0);
 		}
 		.Package-card__weight {
-			background-color: $blue-hover;
+			background-color: $hoverColor;
 		}
 		.Package__note {
 			button {
-				color: $blue-hover;
-				border-bottom: 1px dashed $blue-hover;
-			}
-		}
-	}
-}
-
-.Package-container--selected {
-	&:hover {
-		.Package-card__outer {
-			background: -o-linear-gradient(315deg, transparent 31px, $red-hover 0);
-			background: linear-gradient(135deg, transparent 31px, $red-hover 0);
-		}
-		.Package-card__weight {
-			background-color: $red-hover;
-		}
-		.Package__note {
-			button {
-				color: $red-hover;
-				border-bottom: 1px dashed $red-hover;
+				color: $hoverColor;
+				border-bottom: 1px dashed $hoverColor;
 			}
 		}
 	}
 	.Package-card__outer {
-		background: -o-linear-gradient(315deg, transparent 31px, $red 0);
-		background: linear-gradient(135deg, transparent 31px, $red 0);
+		background: -o-linear-gradient(315deg, transparent 31px, $baseColor 0);
+		background: linear-gradient(135deg, transparent 31px, $baseColor 0);
 	}
 	.Package-card__weight {
-		background-color: $red;
+		background-color: $baseColor;
 	}
 	.Package__note {
 		border-bottom: 1px solid rgba(0,0,0,0);
 		transition: 0s ease;
 		button {
-			color: $red;
-			border-bottom: 1px dashed $red;
+			color: $baseColor;
+			border-bottom: 1px dashed $baseColor;
 		}
 	}
+}
+
+.Package-container {
+	width: 20rem;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.Package-container--base {
+	@include package_theme-color($blue, $blue-hover);
+}
+
+.Package-container--selected {
+	@include package_theme-color($red, $red-hover);
 }
 
 .Package-container--disabled {
@@ -93,8 +84,6 @@
 	&__outer {
 		width: 20rem;
 		height: 30rem;
-		background: -o-linear-gradient(315deg, transparent 31px, $blue 0);
-		background: linear-gradient(135deg, transparent 31px, $blue 0);
 		position: relative; 
 		border-radius: 0.75rem;
 		cursor: pointer;
@@ -155,7 +144,6 @@
 		left: -1.5rem;
 	}
 	&__weight {
-		background-color: $blue;
 		width: 5rem;
 		height: 5rem;
 		border-radius: 50%;
@@ -189,7 +177,6 @@
 		}
 	}
 	&__weight {
-		background-color: $blue;
 		width: 5rem;
 		height: 5rem;
 		border-radius: 50%;
@@ -236,11 +223,9 @@
 		font-weight: 700;
 		font-size: 13px;
 		line-height: 15px;
-		color: $blue;
 		padding: 0;
 		border: none;
 		background-color: transparent;
 		cursor: pointer;
-		border-bottom: 1px dashed $blue;
 	}
 }

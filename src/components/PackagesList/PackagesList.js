@@ -4,11 +4,11 @@ import Package from './Package/Package';
 
 const PackageList = ({ data }) => {
   return (
-    <div className="Package-list__container">
+    <section className="Package-list__container">
       {data.map((item, index) => (
         <Package key={item.id} data={item} tabindex={index + 1} />
       ))}
-    </div>
+    </section>
   );
 };
 
