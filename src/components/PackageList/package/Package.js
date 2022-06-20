@@ -13,7 +13,6 @@ const Package = ({ data, tabindex }) => {
   };
   return (
     <article
-      tabIndex={!disable ? tabindex.toString() : '-1'}
       className={
         disable
           ? 'Package-container Package-container--disabled'
@@ -22,10 +21,12 @@ const Package = ({ data, tabindex }) => {
           : 'Package-container Package-container--base'
       }>
       <div
+        tabIndex={!disable ? '0' : '-1'}
         className="Package-card Package-card__outer"
         onClick={onChangeSelect}
         onMouseLeave={() => setFocused(false)}
-        onMouseEnter={() => setFocused(true)}>
+        onMouseEnter={() => setFocused(true)}
+        onKeyPress={onChangeSelect}>
         <div className="Package-card Package-card__inner">
           <div className="Package-card__description-wrap">
             <p className="Package-card__note">
