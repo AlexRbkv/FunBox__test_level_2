@@ -13,7 +13,7 @@ const Package = ({ data, tabindex }) => {
   };
   return (
     <article
-      tabindex={!disable && tabindex}
+      tabIndex={!disable ? tabindex.toString() : '-1'}
       className={
         disable
           ? 'Package-container Package-container--disabled'
@@ -44,8 +44,8 @@ const Package = ({ data, tabindex }) => {
               <span>{taste}</span>
             </h2>
             <ul className="Package-card__bonus">
-              {bonus.map((item) => (
-                <li>
+              {bonus.map((item, index) => (
+                <li key={index}>
                   <b>{item.match(/\d+/)}</b>
                   {item.replace(/[0-9]/g, '')}
                 </li>
@@ -70,7 +70,7 @@ const Package = ({ data, tabindex }) => {
             <button type="button" onClick={onChangeSelect}>
               купи
             </button>
-            <span class="blue-text">.</span>
+            <span className="blue-text">.</span>
           </>
         )}
       </p>
