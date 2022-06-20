@@ -1,16 +1,16 @@
-# Тестовое задания от FunBox
+# Тестовое задание от FunBox
 
 Задание выполнил: Рыбаков Александр
 
-Сроки выполнения: 16.02.2022 - 19.06.2022
+Сроки выполнения: 16.06.2022 - 19.06.2022
 
 Ответы на теоретические вопросы (Level 1) доступны по ссылке:
 https://docs.google.com/document/d/1qoClTkNjoVuNa5ndsDzISycAagBuBpTw/edit?usp=sharing&ouid=118030194809399636271&rtpof=true&sd=true
 
-Приложение было создано с помощью create-react-app
-
 Ссылка на практическую часть тестового задания (Level 2):
 https://alexrbkv.github.io/funbox__test_level_2/
+
+Приложение было создано с помощью create-react-app
 
 # Начало работы
 
