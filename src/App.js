@@ -5,10 +5,10 @@ import { data } from '../src/store/data';
 function App() {
   return (
     <div className="App">
-      <div className="App__container">
+      <section className="App__container">
         <h1 className="App__caption">Ты сегодня покормил кота?</h1>
         <PackageList data={data} />
-      </div>
+      </section>
     </div>
   );
 }
