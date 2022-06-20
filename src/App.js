@@ -1,5 +1,5 @@
 import './App.scss';
-import PackageList from './components/PackageList/PackageList';
+import PackagesList from './components/PackagesList/PackagesList';
 import { data } from '../src/store/data';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <section className="App__container">
         <h1 className="App__caption">Ты сегодня покормил кота?</h1>
-        <PackageList data={data} />
+        <PackagesList data={data} />
       </section>
     </div>
   );

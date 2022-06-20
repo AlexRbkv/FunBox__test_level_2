@@ -1,6 +1,6 @@
 import React from 'react';
-import './PackageList.scss';
-import Package from './package/Package';
+import './PackagesList.scss';
+import Package from './Package/Package';
 
 const PackageList = ({ data }) => {
   return (
