@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Package.scss';
 import PackageImage from '../../../assets/images/cat.png';
 
-const Package = ({ data, tabindex }) => {
+const Package = ({ data }) => {
   const { title, taste, bonus, weight, note, disable } = data;
   const [selected, setSelected] = useState(false);
   const [focused, setFocused] = useState(false);
