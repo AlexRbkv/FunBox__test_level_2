@@ -21,6 +21,7 @@ const Package = ({ data }) => {
           : 'Package-container Package-container--base'
       }>
       <div
+        title="Package"
         tabIndex={!disable ? '0' : '-1'}
         className="Package-card Package-card__outer"
         onClick={onChangeSelect}
@@ -68,7 +69,7 @@ const Package = ({ data }) => {
         ) : (
           <>
             <span>Чего сидишь? Порадуй котэ, </span>
-            <button type="button" onClick={onChangeSelect}>
+            <button title="Select package" type="button" onClick={onChangeSelect}>
               купи
             </button>
             <span className="blue-text">.</span>
