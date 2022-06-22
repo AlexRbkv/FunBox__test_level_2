@@ -48,7 +48,8 @@ const Package = ({ data }) => {
             <ul className="Package-card__bonus">
               {bonus.map((item, index) => (
                 <li key={index}>
-                  <b>{item.match(/\d+/)}</b>
+                  <b>{item.match(/\d+/)}</b> // Неидеальная реализация, но работает при текущих
+                  данных
                   {item.replace(/[0-9]/g, '')}
                 </li>
               ))}
