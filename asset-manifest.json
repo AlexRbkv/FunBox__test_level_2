@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/funbox__test_level_2/static/css/main.44e9e32f.css",
-    "main.js": "/funbox__test_level_2/static/js/main.d3df90d9.js",
+    "main.js": "/funbox__test_level_2/static/js/main.d0f1141c.js",
     "static/media/Exo2.0-Thin.svg": "/funbox__test_level_2/static/media/Exo2.0-Thin.7add786cfef5ab5997e7.svg",
     "static/media/cat.png": "/funbox__test_level_2/static/media/cat.84f70a1846bff9507f50.png",
     "static/media/trebuchetms.svg": "/funbox__test_level_2/static/media/trebuchetms.40fdbd55a2b4cfb3648e.svg",
@@ -14,10 +14,10 @@
     "static/media/Exo2.0-Thin.woff": "/funbox__test_level_2/static/media/Exo2.0-Thin.fd470d26f4352addb144.woff",
     "index.html": "/funbox__test_level_2/index.html",
     "main.44e9e32f.css.map": "/funbox__test_level_2/static/css/main.44e9e32f.css.map",
-    "main.d3df90d9.js.map": "/funbox__test_level_2/static/js/main.d3df90d9.js.map"
+    "main.d0f1141c.js.map": "/funbox__test_level_2/static/js/main.d0f1141c.js.map"
   },
   "entrypoints": [
     "static/css/main.44e9e32f.css",
-    "static/js/main.d3df90d9.js"
+    "static/js/main.d0f1141c.js"
   ]
 }
