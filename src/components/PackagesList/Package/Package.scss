@@ -35,6 +35,7 @@
 
 .Package-container {
 	width: 20rem;
+	height: 31.9375rem;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
@@ -87,7 +88,9 @@
 		position: relative; 
 		border-radius: 0.75rem;
 		cursor: pointer;
-		outline: none;
+		&::active {
+			outline: none;
+		}
 	}
 	&__inner {
 		width: calc(100% - 0.5rem);
